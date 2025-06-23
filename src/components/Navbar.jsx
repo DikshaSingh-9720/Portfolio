@@ -9,7 +9,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
   backdrop-filter: blur(12px);
