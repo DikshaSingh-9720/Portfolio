@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: none;
+}
+
+/* Base cursor circle */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #38bdf8;
+  box-shadow: 4px 4px 28px #38bdf8;
+  border-radius: 50%;
+  pointer-events: none; /* Let clicks pass through */
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s ease, background-color 0.3s ease;
+  z-index: 9999;
+  mix-blend-mode: difference; /* Optional: for cool inverted effect */
+}
+
+/* Hover effect on interactive elements */
+.cursor.hovered {
+  background-color: #38bdf8;
+  transform: translate(-50%, -50%) scale(1.5);
+}

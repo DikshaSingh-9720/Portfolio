@@ -1,0 +1,152 @@
+.mainContainer {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8rem 4rem;
+  position: relative;
+  background-color: #0f172a;
+  position: relative;
+  height: 100vh;
+}
+
+.profile-wrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+
+.yellow-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: 1; /* 🔵 Behind profile image */
+}
+
+.profile-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #38bdf8;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  animation: glow 4s ease-in-out infinite;
+  z-index: 2; /* 🔵 Above yellow circle */
+}
+
+.aboutContainer {
+  max-width: 600px;
+  text-align: left;
+  position: relative;
+  background: transparent;
+  z-index: 12; /* 🟢 Highest among text content */
+}
+
+.h2 {
+  font-size: 2.5rem;
+  display: inline;
+  color: #38bdf8;
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+  z-index: 12;
+}
+
+.role {
+  color: #facc15;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-left: 0.5rem;
+  display: inline-block;
+}
+
+.aboutme {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-top: 1.5rem;
+  z-index: 12;
+  position: relative;
+}
+
+.image2 {
+  width: 28px;
+  margin: 0 0.4rem;
+  transition: transform 0.4s ease-in-out;
+  z-index: 12;
+  position: relative;
+}
+
+.image2:hover {
+  transform: rotate(360deg);
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+  z-index: 12;
+  position: relative;
+}
+
+.aboutlink {
+  border: 2px solid #38bdf8;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 12;
+  position: relative;
+  background: transparent;
+}
+
+.aboutlink:hover {
+  background-color: #0ea5e9;
+  color: white;
+  position: relative;
+  z-index: 100;
+}
+
+.aboutlink i {
+  margin-left: 0.4rem;
+  transition: transform 0.3s ease;
+}
+
+.aboutlink:hover i {
+  transform: translateX(5px);
+}
+
+.secondary {
+  border: 2px solid #12c669;
+}
+
+.secondary:hover {
+  background-color: #0dac5a;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 8px #38bdf8;
+  }
+  50% {
+    box-shadow: 0 0 18px #38bdf8;
+  }
+  100% {
+    box-shadow: 0 0 8px #38bdf8;
+  }
+}
