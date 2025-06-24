@@ -152,7 +152,7 @@
 
 @media (max-width: 480px) {
   .mainContainer {
-    padding: 4rem;
+    padding: 5rem 2rem;
     margin-bottom: 0;
   }
 
