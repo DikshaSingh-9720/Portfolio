@@ -25,13 +25,14 @@ function App() {
       <section className="soft-skills-section">
         <h2 className="soft-skills-title">Professional Skills</h2>
         <div className="skill-circle-container">
-          <SkillCircle skill="Communication" percentage={85} color="#facc15" />
+          <SkillCircle className="skill" skill="Communication" percentage={85} color="#facc15" />
           <SkillCircle
+          className="skill"
             skill="Problem-solving"
             percentage={50}
             color="#34d399"
           />
-          <SkillCircle skill="Curiosity" percentage={100} color="#60a5fa" />
+          <SkillCircle className="skill" skill="Curiosity" percentage={100} color="#60a5fa" />
         </div>
       </section>
 

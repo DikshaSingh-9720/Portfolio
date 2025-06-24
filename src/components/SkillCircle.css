@@ -43,7 +43,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   padding: 4rem 2rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 20px;
   position: relative;
@@ -85,6 +85,7 @@
   background: #1e293b;
   border-radius: 20px;
   padding: 1.2rem;
+  margin: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -124,7 +125,7 @@
 }
 
 .skill-label {
-  margin-top: 25px;
+  margin-top: 35px;
   font-size: 1rem;
   color: #e2e8f0;
   font-weight: 500;
@@ -151,4 +152,12 @@
   .soft-skills-title{
     font-size: 2.5rem;
   }
+
+  /* .skill-label{
+    padding: 2rem;
+  }
+
+  .skill-circle-container {
+    margin: 2rem;
+  } */
 }
