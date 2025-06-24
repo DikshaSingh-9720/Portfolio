@@ -142,3 +142,9 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 480px) {
+  .soft-skills-section{
+    padding-top: 40rem ;
+  }
+}

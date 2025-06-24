@@ -167,8 +167,8 @@ export default function Navbar() {
             <a href="#projects" onClick={toggleMenu}>
               Projects
             </a>
-            <Link to="/projects" onClick={toggleMenu}>
-              Projects
+            <Link to="/contact" onClick={toggleMenu}>
+              Contact
             </Link>
             <a
               href="/resume.pdf"
