@@ -150,3 +150,24 @@
     box-shadow: 0 0 8px #38bdf8;
   }
 }
+
+@media (max-width: 480px) {
+  .mainContainer {
+    padding: 4rem;
+    margin-bottom: 0;
+  }
+
+  .h2 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+}
